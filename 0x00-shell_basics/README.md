@@ -1,0 +1,1 @@
+This a folder to resolve the exercises of Holberton about Shell Basics 
