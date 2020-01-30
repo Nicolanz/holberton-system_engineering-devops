@@ -1,0 +1,1 @@
+This is the folder which contains files with scripts to resolve Shell permissions challenge (0x01) at Holberton Medellin. 
