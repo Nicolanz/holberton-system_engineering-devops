@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R . betty chgrp . holberton  
+chown -R . betty chgrp . holberton 
