@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-echo | pgrep script | head -n1
