@@ -1,0 +1,3 @@
+all: generate
+generate:
+			gcc main.c holberton.c -o holberton
