@@ -32,15 +32,15 @@ What you should learn from this project:
 
 
 ### [1. Types of network](./1-types_of_network)
-* 
+* LANs, WANs, and Other Kinds of Area Networks
 
 
 ### [2. MAC and IP address](./2-MAC_and_IP_address)
-* 
+* A MAC address is given to a network adapter when it is manufactured. It is hardwired or hard-coded onto your computer's network interface card (NIC) and is unique to it.
 
 
 ### [3. UDP and TCP](./3-UDP_and_TCP)
-* 
+* Once packets have been sent to the right network device using IP using either UDP or TCP as a mode of transportation, it needs to actually enter the network device.
 
 
 ### [4. TCP and UDP ports](./4-TCP_and_UDP_ports)
@@ -48,7 +48,7 @@ What you should learn from this project:
 
 
 ### [5. Is the host on the network](./5-is_the_host_on_the_network)
-* 
+* The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network.
 
 ---
 
