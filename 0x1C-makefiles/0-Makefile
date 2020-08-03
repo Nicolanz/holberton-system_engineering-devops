@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# compile c files
-all: generate
-generate:
-	gcc main.c holberton.c -o holberton
