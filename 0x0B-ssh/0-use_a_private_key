@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# Connects to server using pkey
+sudo ssh ubuntu@34.75.71.7
