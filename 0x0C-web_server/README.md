@@ -28,7 +28,7 @@ What you should learn from this project:
 
 
 ### [1. Install nginx web server](./1-install_nginx_web_server)
-* 
+* Installs nginx web server
 
 
 ### [2. Setup a domain name](./2-setup_a_domain_name)
@@ -36,7 +36,7 @@ What you should learn from this project:
 
 
 ### [3. Redirection](./3-redirection)
-* Readme:
+* Replace a line with multiple lines with sed
 
 
 ### [4. Not found page 404](./4-not_found_page_404)
@@ -45,6 +45,11 @@ What you should learn from this project:
 
 ### [5. Design a beautiful 404 page](./5-design_a_beautiful_404_page)
 * Some of my favorites:
+- Digital Ocean
+- Github
+- Lego
+- Blizzard
+- StickerMule
 
 
 ### [6. Install Nginx web server (w/ Puppet)](./7-puppet_install_nginx_web_server.pp)
