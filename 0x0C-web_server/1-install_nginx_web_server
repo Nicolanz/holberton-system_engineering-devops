@@ -2,3 +2,4 @@
 # Install nginx
 sudo apt-get -y install nginx;
 sudo ufw allow 'Nginx HTTP';
+echo "Holberton School" > some_page.html;
