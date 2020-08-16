@@ -1,0 +1,1 @@
+Folder to resolver the **0x0E-web_stack_debugging_1** at Holberton School
