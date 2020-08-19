@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# whoami Depending the argument
+arg=$1;
+grep "$arg" /etc/passwd | grep -o "$arg" | head -n1
