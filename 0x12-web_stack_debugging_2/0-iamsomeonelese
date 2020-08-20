@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # whoami Depending the argument
+chsh -s /bin/bash "$1";
 sudo su "$1" -c whoami;
