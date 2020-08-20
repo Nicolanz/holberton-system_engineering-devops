@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# change user of nginx
+sudo useradd nginx;
+sudo sed -i 's/www-data/nginx/' /etc/nginx/nginx.conf
+sed -ie '21s/80/8080/' test
+sed -ie '22s/80/8080/' test
+sudo su nginx -c sudo service nginx restart;
