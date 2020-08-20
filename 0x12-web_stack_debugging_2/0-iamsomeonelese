@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 # whoami Depending the argument
-arg=$1;
-sudo su arg;
-whoami;
-sudo su root;
+sudo su "$1" -c whoami;
