@@ -10,7 +10,7 @@ What you should learn from this project:
 ---
 
 ### [0. Run software as another user](./0-iamsomeoneelse)
-* 
+* Runs a command as another user
 
 
 ### [1. Run Nginx as Nginx](./1-run_nginx_as_nginx)
