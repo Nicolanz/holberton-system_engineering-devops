@@ -26,4 +26,4 @@ if __name__ == "__main__":
         len(json.loads(obj.text))
     ))
     for i in lista:
-        print("\t{}".format(i))
+        print("\t {}".format(i))
