@@ -10,8 +10,9 @@ if __name__ == "__main__":
     lista = []
     url = 'https://jsonplaceholder.typicode.com/users'
 
-    obj = requests.get('{}/{}'.format(url, sys.argv[1]))
-    name = eval(obj.text)['name']
+    name = json.loads(requests.get('{}/{}'.format(
+        url, sys.argv[1])).text)['name']
+
     obj = requests.get('{}/{}/todos'.format(url, sys.argv[1]))
 
     for i in json.loads(obj.text):
@@ -19,8 +20,10 @@ if __name__ == "__main__":
             num = num + 1
             lista.append(i['title'])
 
-    print("Employee {:s} is done with tasks ({:d}/{:d})".format(
-        name, num, len(json.loads(obj.text))
+    print("Employee {} is done with tasks ({}/{})".format(
+        name,
+        num,
+        len(json.loads(obj.text))
     ))
     for i in lista:
-        print("\t {}".format(i))
+        print("\t{}".format(i))
