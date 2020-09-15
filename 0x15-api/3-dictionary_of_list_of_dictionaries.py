@@ -22,7 +22,7 @@ if __name__ == "__main__":
             lista.append({
                 "username": username
                 "task": j['title'],
-                "completed": j["completed"],
+                "completed": j["completed"]
             })
 
         new_dict[filename] = lista
