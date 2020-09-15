@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""For a given employee ID, returns information
-about his/her list progress"""
+"""Returns information about list progress of employee"""
 import json
 import requests
 import sys
@@ -20,7 +19,7 @@ if __name__ == "__main__":
             num = num + 1
             lista.append(i['title'])
 
-    print("Employee {} is done with tasks ({}/{})".format(
+    print("Employee {} is done with tasks({}/{})".format(
         name,
         num,
         len(json.loads(obj.text))
