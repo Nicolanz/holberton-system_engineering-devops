@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
         for j in obj:
             lista.append({
-                "username": username
+                "username": username,
                 "task": j['title'],
                 "completed": j["completed"]
             })
@@ -29,5 +29,4 @@ if __name__ == "__main__":
         lista = []
 
     with open('todo_all_employees.json'.format(filename), mode="w") as file:
-        new_dict[filename] = lista
         json.dump(new_dict, file)
