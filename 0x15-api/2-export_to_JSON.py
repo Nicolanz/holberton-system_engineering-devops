@@ -7,6 +7,7 @@ import sys
 if __name__ == "__main__":
 
     new_dict = {}
+    lista = []
     url = 'https://jsonplaceholder.typicode.com/users'
 
     obj = json.loads(requests.get('{}/{}/todos'.format(url, sys.argv[1])).text)
@@ -20,12 +21,13 @@ if __name__ == "__main__":
         sys.argv[1]
     )).text)[0]['userId']
 
-    with open('{}.json'.format(filename), mode="a") as file:
+    for i in obj:
+        lista.append({
+            "task": i['title'],
+            "completed": i["completed"],
+            "username": username
+            })
 
-        for i in obj:
-            new_dict.update({filename: [{
-                "task": i['title'],
-                "completed": i["completed"],
-                "username": username
-            }]})
-            json.dump(new_dict, file)
+    with open('{}.json'.format(filename), mode="w") as file:
+        new_dict[filename] = lista
+        json.dump(new_dict, file)
