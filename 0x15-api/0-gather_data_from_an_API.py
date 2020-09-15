@@ -17,9 +17,9 @@ if __name__ == "__main__":
             url, sys.argv[1])).text)
     except:
         sys.exit(1)
-    
+
     for i in obj:
-        if i['completed'] == True:
+        if i['completed'] is True:
             tasks_done = tasks_done + 1
             lista.append(i['title'])
 
