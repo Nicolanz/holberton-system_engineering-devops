@@ -5,24 +5,28 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    num = 0
-    lista = []
+
     url = 'https://jsonplaceholder.typicode.com/users'
+    tasks_done = 0
+    lista = []
 
-    name = json.loads(requests.get('{}/{}'.format(
-        url, sys.argv[1])).text)['name']
-
-    obj = requests.get('{}/{}/todos'.format(url, sys.argv[1]))
-
-    for i in json.loads(obj.text):
-        if i['completed'] is True:
-            num = num + 1
+    try:
+        name = json.loads(requests.get("{}/{}".format(
+            url, sys.argv[1])).text)['name']
+        obj = json.loads(requests.get('{}/{}/todos'.format(
+            url, sys.argv[1])).text)
+    except:
+        sys.exit(1)
+    
+    for i in obj:
+        if i['completed'] == True:
+            tasks_done = tasks_done + 1
             lista.append(i['title'])
 
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         name,
-        num,
-        len(json.loads(obj.text))
+        tasks_done,
+        len(obj)
     ))
     for i in lista:
         print("\t {}".format(i))
